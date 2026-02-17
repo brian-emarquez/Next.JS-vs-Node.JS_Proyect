@@ -10,6 +10,27 @@ Repositorio de ejemplo para aprender a integrar un backend en Node/Express con u
 
 Estructura del repositorio
 --------------------------
+
+```bash
+next-node-project/
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   └── database.js
+│   │   ├── routes/
+│   │   │   └── users.routes.js
+│   │   ├── controllers/
+│   │   │   └── users.controller.js
+│   │   ├── app.js
+│   │   └── server.js
+│   └── package.json
+│
+└── frontend/
+    ├── app/page.js
+    ├── services/userService.js
+```
+
 - `backend/` — Código del servidor (Express)
 	- `package.json` — scripts y dependencias
 	- `test-db.js` — script de prueba de conexión a DB
