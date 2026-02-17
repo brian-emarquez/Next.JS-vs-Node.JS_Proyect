@@ -1,4 +1,5 @@
-USE NextNodeDB;
+Create database NextNodeDB
+USE NextNodeDB
 GO
 
 CREATE TABLE users (
