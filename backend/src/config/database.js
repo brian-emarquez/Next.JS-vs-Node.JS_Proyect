@@ -1,6 +1,6 @@
 const sql = require('mssql');
 
-const dbSettings = {
+const config = {
   user: 'brian',                // o tu usuario
   password: 'briandb',
   server: 'localhost', // ajusta según tu caso
@@ -12,13 +12,16 @@ const dbSettings = {
   }
 };
 
-async function getConnection() {
+const getConnection = async () => {
   try {
-    const pool = await sql.connect(dbSettings);
+    const pool = await sql.connect(config);
     return pool;
   } catch (error) {
-    console.error('❌ Error SQL:', error);
+    console.error('❌ Error conexión SQL:', error);
   }
-}
+};
 
-module.exports = { getConnection };
+module.exports = {
+  sql,
+  getConnection
+};

@@ -1,16 +1,19 @@
-const { getConnection, sql } = require("../config/database");
+const { getConnection, sql } = require('../config/database');
 
 // GET - listar usuarios
 const getUsers = async (req, res) => {
   try {
     const pool = await getConnection();
-    const result = await pool
-      .request()
-      .query("SELECT id, name, email FROM users");
+
+    const result = await pool.request().query(
+      'SELECT id, name, email FROM users'
+    );
 
     res.json(result.recordset);
+
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error(error);
+    res.status(500).json({ error: 'Error al obtener usuarios' });
   }
 };
 
