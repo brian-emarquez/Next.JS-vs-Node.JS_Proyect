@@ -152,7 +152,3 @@ Para contribuir al backend:
 3. Asegúrate de que los tests pasen
 4. Envía un pull request
 
----
-
-**Autor:** [Tu nombre]  
-**Versión:** 1.0.0
