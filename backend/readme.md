@@ -26,6 +26,46 @@ npm start
    - Edita `src/config/database.js` con tus credenciales MSSQL
    - Puerto por defecto: `3001`
 
+4. **Test:**
+
+- Diagrama de la API:
+
+  ![API Diagram](Assets/api.png)
+
+Prueba los endpoints con los siguientes ejemplos `curl`. Asegúrate de que el servidor esté corriendo en `http://localhost:3001`.
+
+- Obtener todos los usuarios (GET):
+
+```bash
+curl -sS http://localhost:3001/api/users | jq
+```
+
+- Obtener un usuario por ID (GET):
+
+```bash
+POST  http://localhost:3001/api/users/1
+```
+
+- Crear un usuario (POST):
+
+```bash
+{
+  "name": "Brian Actualizado",
+  "email": "brian.Actualizado@email.com"
+}
+
+```
+
+- Eliminar un usuario (DELETE):
+
+```bash
+curl -sS -X DELETE http://localhost:3001/api/users/1
+```
+
+Notas:
+- Si no tienes `jq`, remueve la tubería `| jq` de los ejemplos o instala `jq` para formatear JSON.
+- Asegúrate de enviar `express.json()` (el middleware) activado en `src/app.js` para que POST/PUT funcionen.
+
 ## 📁 Estructura del Proyecto
 
 ```
