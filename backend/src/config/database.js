@@ -2,7 +2,7 @@ const sql = require('mssql');
 
 const config = {
   user: 'brian',                // o tu usuario
-  password: 'briandb',
+  password: 'briandb1',
   server: 'localhost', // ajusta según tu caso
   database: 'NextNodeDB',
   port: 1433,

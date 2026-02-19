@@ -2,6 +2,9 @@ const API_URL = 'http://localhost:3001/api/users';
 
 export const getUsers = async () => {
   const res = await fetch(API_URL);
+  if (!res.ok) {
+    throw new Error("Error al obtener usuarios");
+  }
   return res.json();
 };
 

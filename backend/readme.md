@@ -13,8 +13,17 @@ API REST desarrollada con **Express.js** conectada a una base de datos **MSSQL**
 
 1. **Instalar dependencias:**
 ```bash
-npm install
+npm install express cors
+npm install cors
+
 ```
+
+_Permisos PowerShell_
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
 
 2. **Ejecutar:**
 
@@ -96,12 +105,6 @@ backend/
 ### Iniciar el servidor en desarrollo:
 ```bash
 npm start
-```
-
-_Permisos PowerShell_
-
-```bash
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 El servidor se ejecutará en `http://localhost:3001`
