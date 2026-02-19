@@ -1,5 +1,7 @@
 # Next.JS vs Node.JS
 
+![CRUD Architecture](./assets/CRUD.png)
+
 Proyecto ejemplo que compara y demuestra una arquitectura Full‑Stack usando:
 - Frontend (placeholder): Next.js
 - Backend: Node.js con Express y conexión a SQL Server (mssql)
@@ -115,4 +117,6 @@ Contacto
 Autor: brian-emarquez
 
 ---
+
+![CRUD Details](/postman/crud1.png)
 Pequeños pasos recomendados ahora: revisar y mover credenciales fuera de `database.js`, y decidir si quieres que complete el `frontend/` con un ejemplo básico en Next.js.
